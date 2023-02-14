@@ -37,7 +37,7 @@ const App = () => {
   console.log(list);
   return <div id="main">
     <ol>
-      {list.map((e,idx) => <li key={`location${idx}`}>{e.name}</li> )}
+      {list.map((e,idx) => <li id={`location${idx}`}>{e.name}</li> )}
     </ol>
   </div>;
 };
